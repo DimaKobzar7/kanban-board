@@ -14,8 +14,6 @@ TS, React.js, Redux Toolkit, Vite, Dnd-kit, SCSS, HTML, Express, Mongoose.
 
 3. Custom form validation
 
-4. 
-
 ## Project Setup
 Go to the client folder and enter this command into the terminal:
 
