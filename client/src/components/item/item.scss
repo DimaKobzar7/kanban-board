@@ -41,6 +41,11 @@
 
     overflow: scroll;
 
+    &::-webkit-scrollbar {
+      height: 0; 
+      width: 0; 
+    }
+
     @media (max-width: 575px) {
       height: 25px;
       
@@ -57,6 +62,11 @@
     overflow: scroll;
 
     word-break: break-word;
+
+     &::-webkit-scrollbar {
+      height: 0; 
+      width: 0; 
+    }
 
     @media (max-width: 575px) {
       margin-bottom: 10px;
