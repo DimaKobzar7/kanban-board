@@ -64,6 +64,11 @@
 
     resize: none;
 
+    &::-webkit-scrollbar {
+      height: 0; 
+      width: 0; 
+    }
+
     @media (max-width: 575px) {
       min-height: 50px;
     }
