@@ -1,4 +1,4 @@
-# people-info-CRUD
+# Kanban-board
 
 [Preview](https://kanban-board-client.onrender.com/)
 
