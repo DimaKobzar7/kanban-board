@@ -1,0 +1,129 @@
+.appForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  padding: 16px;
+
+  width: 100%;
+
+  @media (max-width: 575px) {
+    padding: 12px;
+  }
+
+  &__input,
+  &__textarea {
+    padding: 5px;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+
+    border: 1px solid #ccc;
+    
+    outline: none;
+
+    &:focus {
+      border-color: #918686;
+    }
+  }
+
+  &__input {
+    border-top-left-radius: 186px 34px;
+    border-top-right-radius: 175px 45px;
+    border-bottom-right-radius: 82px 210px;
+    border-bottom-left-radius: 147px 49px;
+
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+
+    &.error {
+      border-color: red;
+
+      &::placeholder {
+        color: red;
+      }
+  
+    }
+  }
+
+  &__textarea {
+    min-height: 70px;
+
+    border-top-left-radius: 160px 55px;
+    border-top-right-radius: 83px 34px;
+    border-bottom-right-radius: 232px 16px;
+    border-bottom-left-radius: 27px 249px;
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+
+    resize: none;
+
+    @media (max-width: 575px) {
+      min-height: 50px;
+    }
+
+  }
+
+  &__btns {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+  }
+
+  &__send-form,
+  &__reject-form {
+    padding: 10px;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+
+    background-color: #d5d5d5;
+
+    border: none;
+    border-radius: 4px;
+    
+    cursor: pointer;
+
+    transition: background-color 0.3s;
+
+    @media (max-width: 575px) {
+      padding: 4px;
+    }
+
+    &:hover {
+      background-color: #edeaea;
+    }
+  }
+
+  &__send-form {
+    border-top-left-radius: 284px 55px;
+    border-top-right-radius: 101px 65px;
+    border-bottom-right-radius: 82px 196px;
+    border-bottom-left-radius: 247px 49px;
+
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+  }
+
+  &__reject-form {
+    border-top-left-radius: 88px 21px;
+    border-top-right-radius: 121px 33px;
+    border-bottom-right-radius: 115px 25px;
+    border-bottom-left-radius: 143px 44px;
+
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+  }
+}

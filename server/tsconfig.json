@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es2017",                        
+    "module": "commonjs",                     
+    "strict": true,                           
+    "esModuleInterop": true,                  
+    "skipLibCheck": true,                     
+    "forceConsistentCasingInFileNames": true, 
+    "outDir": "./dist",                       
+    "rootDir": "./src",     
+    "jsx": "react",                        
+    "resolveJsonModule": true,                 
+    "noImplicitAny": true,                     
+    "moduleResolution": "node",                
+    "types": ["node", "express", "mongoose"]
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
+}

@@ -1,0 +1,120 @@
+.selectBoard {
+  position: relative;
+
+  display: flex;
+  gap: 32px;
+
+  margin-bottom: 40px;
+ 
+  @media (max-width: 991px) {
+    gap: 24px;
+
+    margin-bottom: 32px;
+  }
+
+  @media (max-width: 575px) {
+    gap: 16px;
+
+    margin-bottom: 24px;
+  }
+
+  &__wrap {
+    display: flex;
+
+    width: 80%;
+  }
+
+  &__error {
+    position: absolute;
+    bottom: -24px;
+    right: 50%;
+
+    width: 100%;
+
+    font-size: 16px;
+    color: red;
+
+    transform: translate(50%);
+
+    text-align: center;
+  }
+
+  &__input{
+    padding: 20px;
+
+    width: 100%;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+
+    border-top-left-radius: 255px 45px;
+    border-top-right-radius: 265px 16px;
+    border-bottom-right-radius: 25px 115px;
+    border-bottom-left-radius: 15px 255px;
+
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+
+    outline: none;
+
+    @media (max-width: 991px) {
+      padding: 16px;
+    }
+
+    @media (max-width: 575px) {
+      padding: 8px;
+    }
+
+    &:focus {
+      border-color: #918686;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 20%;
+
+    padding: 8px;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    font-style: normal;
+
+    background-color: white;
+
+    border-top-left-radius: 55px 115px;
+    border-top-right-radius: 77px 385px;
+    border-bottom-right-radius: 25px 151px;
+    border-bottom-left-radius: 115px 255px;
+  
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+    @media (max-width: 991px) {
+      font-size: 18px;
+    }
+  
+    @media (max-width: 575px) {
+      flex-basis: 30%;
+      font-size: 16px;
+    }
+
+    &:hover {
+      background-color: #edeaea;
+    }
+  }
+}

@@ -1,0 +1,98 @@
+.droppable {
+  flex-shrink: 0;
+
+  width: 300px;
+
+  @media (max-width: 575px) {
+    width: 250px;
+  }
+
+  &--toDo {
+    .droppable__list {
+      border-top-left-radius: 205px 15px;
+      border-top-right-radius: 10px 62px;
+      border-bottom-right-radius: 125px 15px;
+      border-bottom-left-radius: 15px 155px;
+
+      border-top: 3px solid black;
+      border-left: 5px solid black;
+      border-bottom: 3px solid black;
+      border-right: 3px solid black;
+    }
+  }
+
+  &--inProgress {
+    .droppable__list {
+      border-top-left-radius: 8px 25px;
+      border-top-right-radius: 221px 11px;
+      border-bottom-right-radius: 15px 225px;
+      border-bottom-left-radius: 258px 8px;
+
+      border-top: 3px solid black;
+      border-left: 3px solid black;
+      border-bottom: 5px solid black;
+      border-right: 5px solid black;
+    }
+  }
+
+  &--done {
+    .droppable__list {
+      border-top-left-radius: 133px 9px;
+      border-top-right-radius: 39px 6px;
+      border-bottom-right-radius: 225px 15px;
+      border-bottom-left-radius: 19px 207px;
+
+      border-top: 2px solid black;
+      border-left: 5px solid black;
+      border-bottom: 3px solid black;
+      border-right: 3px solid black;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+   
+    padding: 20px 10px;
+
+    height: 800px;
+
+    background-color: #d5d5d5;
+
+    list-style-type: none;
+
+    overflow: scroll;
+
+    &::-webkit-scrollbar {
+      height: 0;
+      width: 0;
+    }
+
+    @media (max-width: 991px) {
+      height: 600px;
+    }
+
+    @media (max-width: 575px) {
+      height: 500px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 12px;
+ 
+    font-size: 28px;
+    line-height: 1.2;
+
+    text-align: center;
+
+    @media (max-width: 991px) {
+      font-size: 24px;
+      line-height: 1.2;
+    }
+
+    @media (max-width: 575px) {
+      font-size: 20px;
+    }
+  }
+}
